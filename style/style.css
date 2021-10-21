@@ -1,0 +1,227 @@
+@charset "UTF-8";
+@import url(../style/style_reset.css);
+@import url(../style/style_fonts.css);
+
+/* div#headerArea */
+div#headerArea {
+    width: 100%;
+    height: 90px;
+    background-color: #fff;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* header#header */
+header#header {
+    width: 1300px;
+    height: 90px;
+    margin: 0 auto;
+}
+#header > * {
+    flex: 1;
+}
+
+/* nav#gnb */
+#header nav#gnb ul#mainMenu {
+    line-height: 90px;
+
+    position: relative;
+    z-index: 999;
+}
+#header nav#gnb ul#mainMenu li {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    transform: scaleX(1.03); 
+}
+#header nav#gnb ul#mainMenu li:nth-child(-n+3) {
+    margin-right: 33px;
+}
+
+#header nav#gnb ul.subMenu {
+    width: 150px;
+    padding: 30px 10px;
+    background-color: #fff;
+    border-bottom: 1px solid #e0e0e0;
+
+    position: absolute;
+    left: -6px;
+    display: none;
+}
+#header nav#gnb ul.subMenu li {
+    line-height: 30px;
+}
+
+#header nav#gnb ul#mainMenu a:hover,
+#header nav#gnb ul.subMenu a:hover {
+    color: #bbb;
+}
+
+/* div#headerLogo */
+#header div#headerLogo {
+    width: 150px;
+    text-align: center;
+}
+#header div#headerLogo a {
+    line-height: 85px;
+    display: inline-block;
+}
+
+/* div#div#searchIco */
+#header div#searchIcon {
+    text-align: right;
+    line-height: 90px;
+    cursor: pointer;
+}
+
+/* div#wrap */
+/* div#slide */
+div#slide {
+    overflow: hidden;
+}
+#slide img {
+    width: 100%;
+    position: relative;
+}
+#slide img:not(:first-child) {
+    display: none;
+}
+
+/* div#snsGallery */
+div#snsGallery {
+    width: 1300px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+#snsGallery div#snsGalleryLogo {
+    margin: 50px 0;
+    text-align: center;
+}
+#snsGallery div#snsGalleryLogo img {
+    width: 115px;
+}
+
+#snsGallery div#snsGalleryImg table img {
+    width: 432px;
+    cursor: pointer;
+}
+
+/* div#footerArea */
+div#footerMenu {
+    width: 100%;
+    height: 40px;
+    background-color: #111;
+}
+#footerMenu div#footerBtnArea {
+    width: 870px;
+    margin: 0 auto;
+}
+#footerMenu div#footerBtnArea a {
+    line-height: 40px;
+}
+#footerMenu div#footerBtnArea img {
+    width: 145px;
+    opacity: 50%;
+}
+#footerMenu div#footerBtnArea img:first-child {
+    margin-right: 40px;
+}
+
+div#footerBG {
+    width: 100%;
+    height: 150px;
+    background-color: #212121;
+}
+
+footer#footer {
+    width: 1240px;
+    margin: 0 auto;
+}
+footer#footer > * {
+    margin-top: 30px;
+    flex: 1;
+}
+
+#footer div#footerLogo {
+    margin-left: 200px;
+}
+#footer div#footerLogo img {
+    width: 190px;
+}
+
+#footer div#companyInfo {
+    color: #eee;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 10.5px;
+    line-height: 20px;
+    margin-left: -60px;
+}
+
+#footer div#instagram {
+    text-align: right;
+}
+#footer div#instagram span {
+    color: #eee;
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+/* div#searchBG */
+div#searchBG {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
+div#closeBtn {
+    float: right;
+    cursor: pointer;
+}
+div#closeBtn span {
+    width: 36px;
+    margin: 10px 25px 10px 10px;
+    display: block;
+    border: 1px solid #fff;
+}
+div#closeBtn span:nth-child(1) {
+    transform: rotate(45deg);
+    margin-top: 42px;
+}
+div#closeBtn span:nth-child(2) {
+    transform: rotate(-45deg);
+    margin-top: -12px;
+}
+
+div#searchArea {
+    height: 65px;
+    width: 740px;
+    border-bottom: 1px solid #fff;
+
+    position: absolute;
+    left: 50%;
+    top: 250px;
+    transform: translate(-50%, -50%);
+}
+div#searchArea input {
+    color: #fff;
+    width: 710px;
+    height: 30px;
+    font-size: 24px;
+    margin-top: 15px;
+    outline: none;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+}
+div#searchArea input::placeholder {
+    color: #aaa;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+div#searchArea img {
+    width: 30px;
+    height: 30px;
+    margin-top: 15px;
+    cursor: pointer;
+}
