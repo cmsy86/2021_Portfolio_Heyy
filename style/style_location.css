@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+/* div#locationMain */
+div#locationMain {
+    padding-top: 90px;
+    margin-bottom: 110px;
+}
+
+/* div#bbs */
+#locationMain div#bbs {
+    margin-top: 65px;
+}
+
+/* div.tabBtn */
+#locationMain #bbs div.tabBtn {
+    text-align: center;
+    margin-bottom: 65px;
+}
+
+#locationMain #bbs div.tabBtn button {
+    font-size: 13px;
+    padding: 5px 0;
+    background-color: #fff;
+    border: none;
+
+    cursor: pointer;
+}
+#locationMain #bbs div.tabBtn button:first-child {
+    margin-right: 25px;
+}
+
+/* div.tabContents */
+div.tabContents {
+    width: 88%;
+    margin: 0 auto;
+}
+
+/* div#map */
+div#map {
+    width: 100%;
+    height: 570px;
+    margin: 0 auto;
+    background-color: #aaa;
+}
+
+/* div#locationInfo */
+div#locationInfo {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-top: 100px;
+}
+div#locationInfo > * {
+    width: 50%;
+    line-height: 22px;
+    margin: 0 auto;
+    padding-bottom: 60px;
+}
+
+div#locationInfo h3 {
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+div#address p,
+div#contact p {
+    color: #888;
+    font-size: 13px;
+    padding-right: 30px;
+}
+div#publicTransit p,
+div#ownCar p {
+    color: #888;
+    font-size: 11px;
+}
+
+div#publicTransit span#standard, 
+div#ownCar span#standard {
+    color: #555;
+    font-size: 14px;
+    text-decoration: underline;
+}
+div#publicTransit span#leadTime,
+div#ownCar span#leadTime {
+    font-size: 13px;
+}
+
+/* map images */
+div#bbsChuncheon div#map {
+    background-image: url(../images/location/naver_map_chuncheon.png);
+    background-size: 100%;
+    background-position: center;
+
+}
+div#bbsSeogwipo div#map {
+    background-image: url(../images/location/naver_map_seogwipo.png);
+    background-size: 100%;
+    background-position: center;
+}
+
+/* naver map link */
+div#navermap span {
+    color: #fff;
+    font-size: 12px;
+    padding: 10px 30px;
+    margin-top: 30px;
+    background-color: #333;
+    border: none;
+    
+    display: inline-block;
+}

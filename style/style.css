@@ -1,6 +1,11 @@
 @charset "UTF-8";
 @import url(../style/style_reset.css);
 @import url(../style/style_fonts.css);
+@import url(../style/style_about.css);
+@import url(../style/style_hotels.css);
+@import url(../style/style_reset.css);
+@import url(../style/style_location.css);
+@import url(../style/style_search.css);
 
 /* div#headerArea */
 div#headerArea {
@@ -8,6 +13,9 @@ div#headerArea {
     height: 90px;
     background-color: #fff;
     border-bottom: 1px solid #e0e0e0;
+
+    position: fixed;
+    z-index: 999;
 }
 
 /* header#header */
@@ -23,14 +31,15 @@ header#header {
 /* nav#gnb */
 #header nav#gnb ul#mainMenu {
     line-height: 90px;
-
     position: relative;
-    z-index: 999;
+    z-index: 888;
 }
+
 #header nav#gnb ul#mainMenu li {
     font-family: 'Nunito Sans', sans-serif;
     font-size: 12px;
     font-weight: bold;
+
     transform: scaleX(1.03); 
 }
 #header nav#gnb ul#mainMenu li:nth-child(-n+3) {
@@ -41,7 +50,7 @@ header#header {
     width: 150px;
     padding: 30px 10px;
     background-color: #fff;
-    border-bottom: 1px solid #e0e0e0;
+    border-top: 2px solid #e0e0e0;
 
     position: absolute;
     left: -6px;
@@ -51,9 +60,21 @@ header#header {
     line-height: 30px;
 }
 
+/* nav#gnb hover */
 #header nav#gnb ul#mainMenu a:hover,
 #header nav#gnb ul.subMenu a:hover {
     color: #bbb;
+}
+
+/* div#gnbBG */
+div#gnbBG {
+    width: 100%;
+    height: 125px;
+    background-color: #fff;
+    border-bottom: 1px solid #e0e0e0;
+    position: absolute;
+    display: none;
+    z-index: 777;
 }
 
 /* div#headerLogo */
@@ -66,18 +87,19 @@ header#header {
     display: inline-block;
 }
 
-/* div#div#searchIco */
+/* div#searchIcon */
 #header div#searchIcon {
     text-align: right;
     line-height: 90px;
+
     cursor: pointer;
 }
 
-/* div#wrap */
 /* div#slide */
 div#slide {
     overflow: hidden;
 }
+
 #slide img {
     width: 100%;
     position: relative;
@@ -92,17 +114,56 @@ div#snsGallery {
     margin: 0 auto;
     margin-bottom: 50px;
 }
+
 #snsGallery div#snsGalleryLogo {
     margin: 50px 0;
     text-align: center;
 }
+
 #snsGallery div#snsGalleryLogo img {
     width: 115px;
 }
-
 #snsGallery div#snsGalleryImg table img {
     width: 432px;
     cursor: pointer;
+}
+
+/* div#snsGallery hover overlay */
+#snsGallery div#snsGalleryImg td {
+    position: relative;
+    cursor: pointer;
+}
+#snsGallery div#snsGalleryImg td > img {
+    display: block;
+}
+
+#snsGallery div#snsGalleryImg div.snsGalleryOverlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    height: 100%;
+    width: 100%;
+
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#snsGallery div#snsGalleryImg td:hover .snsGalleryOverlay {
+    opacity: 1;
+}
+
+#snsGallery div#snsGalleryImg td .snsGalleryTxt {
+    color: #fff;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 11px;
+    line-height: 20px;
+
+    position: absolute;
+    top: 48%;
+    left: 30px;
 }
 
 /* div#footerArea */
@@ -111,13 +172,17 @@ div#footerMenu {
     height: 40px;
     background-color: #111;
 }
+
+/* div#footerBtnArea */
 #footerMenu div#footerBtnArea {
     width: 870px;
     margin: 0 auto;
 }
+
 #footerMenu div#footerBtnArea a {
     line-height: 40px;
 }
+
 #footerMenu div#footerBtnArea img {
     width: 145px;
     opacity: 50%;
@@ -126,12 +191,14 @@ div#footerMenu {
     margin-right: 40px;
 }
 
+/* div#footerBG */
 div#footerBG {
     width: 100%;
     height: 150px;
     background-color: #212121;
 }
 
+/* footer#footer */
 footer#footer {
     width: 1240px;
     margin: 0 auto;
@@ -141,6 +208,7 @@ footer#footer > * {
     flex: 1;
 }
 
+/* div#footerLogo */
 #footer div#footerLogo {
     margin-left: 200px;
 }
@@ -148,6 +216,7 @@ footer#footer > * {
     width: 190px;
 }
 
+/* div#companyInfo */
 #footer div#companyInfo {
     color: #eee;
     font-family: 'Nanum Gothic', sans-serif;
@@ -156,6 +225,12 @@ footer#footer > * {
     margin-left: -60px;
 }
 
+/* div#companyInfo */
+#footer div#companyInfo {
+    text-align: left;
+}
+
+/* div#instagram */
 #footer div#instagram {
     text-align: right;
 }
@@ -175,7 +250,11 @@ div#searchBG {
     top: 0;
     left: 0;
     display: none;
+
+    z-index: 999;
 }
+
+/* div#closeBtn Button Design */
 div#closeBtn {
     float: right;
     cursor: pointer;
@@ -183,8 +262,9 @@ div#closeBtn {
 div#closeBtn span {
     width: 36px;
     margin: 10px 25px 10px 10px;
-    display: block;
     border: 1px solid #fff;
+
+    display: block;
 }
 div#closeBtn span:nth-child(1) {
     transform: rotate(45deg);
@@ -195,6 +275,7 @@ div#closeBtn span:nth-child(2) {
     margin-top: -12px;
 }
 
+/* div#searchArea */
 div#searchArea {
     height: 65px;
     width: 740px;
@@ -205,12 +286,14 @@ div#searchArea {
     top: 250px;
     transform: translate(-50%, -50%);
 }
+
 div#searchArea input {
     color: #fff;
     width: 710px;
     height: 30px;
     font-size: 24px;
     margin-top: 15px;
+    
     outline: none;
     border: none;
     background-color: rgba(0, 0, 0, 0);
@@ -219,6 +302,7 @@ div#searchArea input::placeholder {
     color: #aaa;
     font-family: 'Nanum Gothic', sans-serif;
 }
+
 div#searchArea img {
     width: 30px;
     height: 30px;

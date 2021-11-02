@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HEYY, Lifestyle for R.E.S.T</title>
     <link rel="stylesheet" href="../style/style.css">
-    <link rel="stylesheet" href="../style/style_about.css">
+    <link rel="stylesheet" href="../style/style_location.css">
 </head>
 <body>
-    
+
     <div id="headerArea">
         <header id="header" class="flexContainer">
             <nav id="gnb">
@@ -66,32 +66,78 @@
     </div>
     <!-- div#headerArea -->
 
-    <div id="aboutMain">
-        <div id="aboutBG">
-            <div id="aboutTxt">
-                <p>
-                    <span>L I F E S T Y L E &nbsp;&nbsp; F O R  &nbsp;&nbsp; R E S T</span><br>
-                    우리는 늘 당신이 궁금합니다.<br><br>
-                    연인이나 친구들과 함께 가는 곳은 어디인지<br>
-                    가족들과 휴가에서 기대하는 분위기는 무엇인지<br>
-                    짧은 휴식동안 어떤 서비스를 누리고 싶은지<br><br>
-                    당신의 일상과 휴식에 대한 끝없는 관심은<br>
-                    여가문화에 대한 고민으로 이어졌고<br>
-                    마침내 새로운 라이프스타일 브랜드로 이어졌습니다.<br><br>
-                    heyy는 당신의 취향과 목적에 어울리는<br>
-                    여가에 관한 새로운 라이프스타일을 제안합니다.<br>
-                    일상의 틈을 풍요롭게 채우고 싶을 때<br>
-                    자신에게 꼭 맞는 여가를 누리고 싶을 때<br>
-                    짧은 휴식을 최대한 만끽하고 싶을 때<br>
-                    자연스럽게 떠오르는 브랜드.<br><br>
-                    지금 heyy가 당신에게 대답합니다.
-                </p>
+    <div id="locationMain">
+        <div id="bbs">
+            <div class="tabBtn flex-container">
+                <a href="../location/location_chuncheon.html">
+                    <button style="color: #aaa;">heyy, chuncheon</button>
+                </a>
+                <a href="../location/location_seogwipo.html">
+                    <button style="border-bottom: 1px solid #333;">heyy, seogwipo</button>
+                </a>
             </div>
-            <!-- div#aboutTxt -->
+            <!-- div.tabBtn -->
+
+            <div class="tabContents" id="bbsSeogwipo">
+                <div id="map"></div>
+                <!-- div#map -->
+
+                <div id="navermap">
+                    <a href="https://map.naver.com/v5/search/%ED%97%A4%EC%9D%B4%EC%84%9C%EA%B7%80%ED%8F%AC/place/1639869302?c=14088136.2298141,3928027.9048630,15,0,0,0,dh&placePath=%3Fentry%253Dpll">
+                        <span>NAVER MAP</span>
+                    </a>
+                </div>
+                <!-- div#navermap -->
+
+                <div id="locationInfo">
+                    <div id="address">
+                        <h3>ADDRESS</h3>
+                        <p>
+                            제주특별자치도 서귀포시 태평로 363 (서귀동 820-1)<br>
+                            363, Taepyeong-ro, Seogwipo-si, Jeju-do
+                        </p>    
+                    </div>
+                    <!-- div#address -->
+                    <div id="contact">
+                        <h3>CONTACT</h3>
+                        <p>
+                            Tel. 064-763-0025<br>
+                            Fax. 064-763-0909 
+                        </p>
+                    </div>
+                    <!-- div#contact -->
+                    <div id="publicTransit">
+                        <h3>대중교통 이용시</h3>
+                        <p>
+                            <span id="standard">제주공항 기준</span><br>
+                            <span id="leadTime">- 공항버스 (약 2시간 소요)</span><br>
+                            600번 승차 > 뉴경남호텔 하차 > 횡단보도 건너서 헤이, 서귀포 도착<br><br>
+                            <span id="standard">제주시외버스터미널 기준</span><br>
+                            <span id="leadTime">- 버스 (약 1시간 30분 소요)</span><br>
+                            평생학습관 하차(281)<br><br>
+                            <span id="standard">서귀포시외버스터미널 기준</span><br>
+                            <span id="leadTime">- 버스 (약 20분 소요)</span><br>
+                            (구) 중앙파출소 하차 (510, 531)
+                        </p>
+                    </div>
+                    <!-- div#publicTransit -->
+                    <div id="ownCar">
+                        <h3>자가용 이용시</h3>
+                        <p>
+                            <span id="standard">제주공항 출발기준</span><br>
+                            <span id="leadTime">- 약 1시간 30분 소요</span><br>
+                            아연로 > 애조로 > 516로
+                        </p>
+                    </div>
+                    <!-- div#ownCar -->
+                </div>
+                <!-- div#locationInfo -->
+            </div>
+            <!-- div#bbsSeogwipo -->
         </div>
-        <!-- div#aboutBG -->
+        <!-- div#bbs -->
     </div>
-    <!-- div#aboutMain -->
+    <!-- div#locationMain -->
 
     <div id="footerArea">
         <div id="footerMenu">
@@ -152,6 +198,6 @@
     
     <script src="../script/jquery-3.6.0.min.js"></script>
     <script src="../script/script.js"></script>
-
+    
 </body>
 </html>

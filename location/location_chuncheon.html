@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HEYY, Lifestyle for R.E.S.T</title>
     <link rel="stylesheet" href="../style/style.css">
-    <link rel="stylesheet" href="../style/style_about.css">
+    <link rel="stylesheet" href="../style/style_location.css">
 </head>
 <body>
-    
+
     <div id="headerArea">
         <header id="header" class="flexContainer">
             <nav id="gnb">
@@ -66,32 +66,87 @@
     </div>
     <!-- div#headerArea -->
 
-    <div id="aboutMain">
-        <div id="aboutBG">
-            <div id="aboutTxt">
-                <p>
-                    <span>L I F E S T Y L E &nbsp;&nbsp; F O R  &nbsp;&nbsp; R E S T</span><br>
-                    우리는 늘 당신이 궁금합니다.<br><br>
-                    연인이나 친구들과 함께 가는 곳은 어디인지<br>
-                    가족들과 휴가에서 기대하는 분위기는 무엇인지<br>
-                    짧은 휴식동안 어떤 서비스를 누리고 싶은지<br><br>
-                    당신의 일상과 휴식에 대한 끝없는 관심은<br>
-                    여가문화에 대한 고민으로 이어졌고<br>
-                    마침내 새로운 라이프스타일 브랜드로 이어졌습니다.<br><br>
-                    heyy는 당신의 취향과 목적에 어울리는<br>
-                    여가에 관한 새로운 라이프스타일을 제안합니다.<br>
-                    일상의 틈을 풍요롭게 채우고 싶을 때<br>
-                    자신에게 꼭 맞는 여가를 누리고 싶을 때<br>
-                    짧은 휴식을 최대한 만끽하고 싶을 때<br>
-                    자연스럽게 떠오르는 브랜드.<br><br>
-                    지금 heyy가 당신에게 대답합니다.
-                </p>
+    <div id="locationMain">
+        <div id="bbs">
+            <div class="tabBtn flex-container">
+                <a href="../location/location_chuncheon.html">
+                    <button style="border-bottom: 1px solid #333;">heyy, chuncheon</button>
+                </a>
+                <a href="../location/location_seogwipo.html">
+                    <button style="color: #aaa;">heyy, seogwipo</button>
+                </a>
             </div>
-            <!-- div#aboutTxt -->
+            <!-- div.tabBtn -->
+
+            <div class="tabContents" id="bbsChuncheon">
+                <div id="map"></div>
+                <!-- div#map -->
+
+                <div id="navermap">
+                    <a href="https://map.naver.com/v5/search/%ED%97%A4%EC%9D%B4%EC%B6%98%EC%B2%9C/place/1536903370?placePath=%3Fentry=pll%26from=nx%26fromNxList=true&c=14218145.7287780,4560425.6276381,15,0,0,0,dh">
+                        <span>NAVER MAP</span>
+                    </a>
+                </div>
+                <!-- div#navermap -->
+
+                <div id="locationInfo" class="flexContainer">
+                    <div id="address">
+                        <h3>ADDRESS</h3>
+                        <p>
+                            강원도 춘천시 남춘로 49(효자동 712-12)<br>
+                            49, Namchun-ro, Chuncheon-si, Gangwon-do
+                        </p>    
+                    </div>
+                    <!-- div#address -->
+                    <div id="contact">
+                        <h3>CONTACT</h3>
+                        <p>
+                            Tel. 033 243 5566<br>
+                            Fax. 033 243 5577
+                        </p>
+                    </div>
+                    <!-- div#contact -->
+                    <div id="publicTransit">
+                        <h3>대중교통 이용시</h3>
+                        <p>
+                            <span id="standard">남춘천역 기준</span><br>
+                            <span id="leadTime">- 도보(약 15분 소요)</span><br>
+                            2번출구로 나와 횡단보도를 건넌 후 490m 직진 > 사거리에서 죄회전 후 약 550m 직진> 다리 건너서 헤이, 춘천 도착<br>
+                            <span id="leadTime">- 택시(약 4분 소요)</span><br>
+                            1번 출구로 나와 정류장에서 택시승차 > 법원방향 건강관리협회 앞 하차> 횡단보도 건너서 헤이, 춘천 도착<br>
+                            <span id="leadTime">- 버스(약 15분소요)</span><br>
+                            법원앞 하차 (2,10,21, 22, 24, 26, 28, 40, 41, 43, 100, 111)<br><br>
+
+                            <span id="standard">춘천시외버스터미널 기준</span><br>
+                            <span id="leadTime">- 도보(약 26분 소요)</span><br>
+                            육교를 건너 횡단 > 교직원공제회까지 약 260m 이동> 우회전 후 횡단보도 지나 약 570m 이동<br>
+                            > 금호카라이프 정비 앞 횡단보도 건너 약 700m 직진 > 헤이, 춘천 도착<br>
+                            <span id="leadTime">- 택시(약 6분 소요)</span><br>
+                            정류장에서 택시승차> 법원방향 건강관리협회 앞 하차> 횡단보도 건너서 헤이, 춘천 도착
+                        </p>
+                    </div>
+                    <!-- div#publicTransit -->
+                    <div id="ownCar">
+                        <h3>자가용 이용시</h3>
+                        <p>
+                            <span id="standard">서울 잠실역 출발기준</span><br>
+                            올림픽대로 > 서울양양고속도로 > 경춘로 (약 1시간 소요, 미정체시)<br><br>
+                            <span id="standard">인천공항 출발기준</span><br>
+                            인천국제공항고속도로 > 서울외곽순환고속도로 > 서울양양고속도로(약 2시간 소요, 미정체시)<br><br>
+                            <span id="standard">대전역 출발기준</span><br>
+                            중부고속도로 > 영동고속도로>중앙고속도로<br>
+                            경부고속도로 > 중부고속도로 > 서울양양고속도로
+                        </p>
+                    </div>
+                    <!-- div#ownCar -->
+                </div>
+                <!-- div#locationInfo -->
+            </div>
+            <!-- div#bbsChuncheon -->
         </div>
-        <!-- div#aboutBG -->
+        <!-- div#bbs -->
     </div>
-    <!-- div#aboutMain -->
+    <!-- div#locationMain -->
 
     <div id="footerArea">
         <div id="footerMenu">
@@ -152,6 +207,6 @@
     
     <script src="../script/jquery-3.6.0.min.js"></script>
     <script src="../script/script.js"></script>
-
+    
 </body>
 </html>
